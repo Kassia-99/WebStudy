@@ -1,0 +1,25 @@
+<!--jQuery로 이벤트 처리하기-->
+<!--마우스가 문단에 들어올 때와 나갈 때-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("p").on({
+                mouseenter: function(){
+                    $(this).css("font-size","30px");
+                },
+                mouseleave: function(){
+                    $(this).css("font-size","16px");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>문단</p>
+</body>
+</html>

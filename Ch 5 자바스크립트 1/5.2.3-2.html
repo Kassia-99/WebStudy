@@ -1,0 +1,26 @@
+<!--DOM트리에서 요소 제거하기-->
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var num=1;
+function p() {
+	var p = document.createElement("P");
+    p.id = "p" + num++;
+    var t = document.createTextNode("문단"+num);
+    p.appendChild(t);
+    document.body.appendChild(p);
+}
+function del_p() {
+	var p = document.getElementById("p"+(--num))
+    if(p) {
+    	document.body.removeChild(p);
+    }
+}
+</script>
+</head>
+<body>
+<button onclick="p()">문단 생성</button>
+<button onclick="del_p()">문단 삭제</button>
+</body>
+</html> 

@@ -1,0 +1,24 @@
+<!--DOM트리에서 요소 추가하기-->
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function button() {
+	var btn = document.createElement("BUTTON");
+    var t = document.createTextNode("버튼");
+    btn.appendChild(t);
+    document.body.appendChild(btn);
+}
+function p() {
+	var p = document.createElement("P");
+    var t = document.createTextNode("문단...");
+    p.appendChild(t);
+    document.body.appendChild(p);
+}
+</script>
+</head>
+<body>
+<button onclick="button()">버튼 만들기</button>
+<button onclick="p()">문단 만들기</button>
+</body>
+</html> 

@@ -1,0 +1,21 @@
+<!--jQuery 작성-->
+<!--p 태그 내용을 클릭하면 내용이 화면에서 사라짐-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("p").dblclick(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>문단 1</p>
+    <p>문단 2</p>
+</body>
+</html>
