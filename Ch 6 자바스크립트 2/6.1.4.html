@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        alert($("#p1").text());
+        $("#p1").text("새 문단");
+    });
+    $("#btn2").click(function(){
+        alert($("#p2").text());
+        $("#p2").html("<b>새 문단2</b>");
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">문단1</p>
+<p id="p2">문단<sub>2</sub></p>
+<button id="btn1">텍스트</button>
+<button id="btn2">HTML</button>
+
+</body>
+</html>
