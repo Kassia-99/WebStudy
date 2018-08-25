@@ -1,3 +1,4 @@
+<!--데이터베이스 정보 추가하기-->
 <!DOCTYPE html>
 <html>
 <body>
